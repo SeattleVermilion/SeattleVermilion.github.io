@@ -98,3 +98,8 @@ body[data-theme="academic"] .hobby-icon{background:#edf4fa}
 @media(max-width:780px){.personal-site-card{grid-template-columns:1fr;padding:22px;gap:20px}.personal-site-card .project-art{min-height:200px}.personal-site-card .project-number{grid-column:auto}}
 
 .hobby-theories .theory-tags{display:flex;flex-wrap:wrap;gap:9px;margin:17px 0}.theory-tags span{font-size:12px;line-height:1.5;color:var(--text);background:rgba(128,134,214,.12);border:1px solid var(--border);padding:7px 11px;border-radius:9px}.theory-contact{display:inline-flex;align-items:center;gap:8px;margin-top:8px;color:var(--accent);font-size:13px;font-weight:700;text-decoration:none}.theory-contact:hover{text-decoration:underline}
+
+[hidden]{display:none!important}
+img{max-width:100%}
+@media(max-width:380px){.wrap{width:calc(100% - 28px)}.hero h1{font-size:clamp(43px,12vw,58px);letter-spacing:-2.5px;white-space:normal}.contact-big{font-size:29px}.glass-card{min-width:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
