@@ -52,3 +52,15 @@
 ## Themes
 
 Use the theme button in the top navigation to switch between Tech and Academic modes. Language and theme choices are saved separately in the browser. To edit colors, use the `body[data-theme="academic"]` rules at the bottom of `style.css`.
+
+
+## 中国内地访问优化版 / Mainland-friendly edition
+
+- 已移除 Google Fonts 远程字体依赖，使用系统字体；在中国大陆和海外均不再需要额外连接 Google 字体服务。
+- 保留科技风手绘头像 `assets/tech-avatar.jpg` 和学术风真人头像 `assets/academic-avatar.jpg`，学术头像做了无损尺寸缩小及有损 JPEG 体积优化。
+- 头像始终本地托管，不调用第三方图片 CDN；主题切换和中英文切换仍由 `script.js` 完成。
+- GitHub Pages 自身在中国内地可能不稳定；以上优化减少外部请求，但**不保证**跨境网络畅通。
+
+### 更新已上线的网站
+
+将本压缩包解压后，把 `index.html`、`style.css`、`script.js`、`README.md` 和 `assets/` 中的文件上传到现有 GitHub 仓库 `SeattleVermilion.github.io` 的根目录，替换同名文件，然后提交修改。**不要再创建仓库、修改 DNS 或重新绑定域名**。部署完成后访问 https://jensendeng.com 并强制刷新（Windows 可用 Ctrl+F5）。
