@@ -26,3 +26,20 @@ body[data-theme="tech"] .about-primary .about-large{color:#eff0ff}
 body[data-theme="tech"] .theme-toggle{color:#ececff;background:rgba(108,111,203,.17)}
 body[data-theme="academic"]{background-color:#f7f9fc!important;color:#202d40!important}
 body[data-theme="academic"] .hero h1{color:#202d40}
+
+/* About section layout refinement, scoped to both themes. */
+#about .about-grid{grid-template-columns:minmax(0,1.42fr) minmax(290px,1fr);gap:22px;align-items:start}
+#about .about-primary{padding:34px 38px 29px}
+#about .about-primary .about-large{font-size:clamp(21px,2.15vw,27px);line-height:1.48;letter-spacing:-.025em;max-width:34ch;margin:16px 0 23px}
+#about .about-copy{font-size:14px;line-height:1.9;color:var(--muted);max-width:68ch}
+#about .about-copy p{margin:0 0 15px}
+#about .about-copy p:last-child{margin-bottom:0}
+#about .about-primary .editable-note{margin:23px 0 0;padding-top:17px;border-top:1px solid var(--border);font-size:11px!important;line-height:1.7}
+#about .about-side{gap:16px;align-content:start}
+#about .info-card{padding:26px 29px;gap:9px}
+#about .info-card strong{font-size:23px;line-height:1.25;margin:5px 0 0}
+#about .info-card .pills{gap:9px;margin-top:5px}
+#about .info-card .pills span{font-size:11px;line-height:1.35;padding:7px 10px}
+#about .info-card small{line-height:1.6;margin-top:6px}
+@media(max-width:900px){#about .about-grid{grid-template-columns:minmax(0,1fr)}#about .about-side{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}#about .about-primary .about-large{max-width:unset}}
+@media(max-width:600px){#about .about-grid{gap:14px}#about .about-primary{padding:26px 23px 24px}#about .about-primary .about-large{font-size:22px}#about .about-side{grid-template-columns:1fr;gap:14px}#about .info-card{padding:24px}#about .about-copy{font-size:14px;line-height:1.85}}
