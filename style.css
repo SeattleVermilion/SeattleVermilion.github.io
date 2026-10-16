@@ -80,3 +80,21 @@ body[data-theme="academic"] .hobby-icon{background:#edf4fa}
 #cv .education-timeline h4{font-size:20px;line-height:1.35;margin:0;color:var(--text);font-weight:650}
 #cv .education-timeline p{margin:5px 0 0;color:var(--muted);font-size:13px}
 @media(max-width:780px){#cv .education-panel{padding:26px 22px}#cv .education-timeline h4{font-size:18px}}
+
+.project-grid-single{grid-template-columns:minmax(0,1fr);max-width:900px}
+.personal-site-card{min-height:0;display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:28px;align-items:center;padding:30px}
+.personal-site-card .project-number{grid-column:1/-1}
+.personal-site-card .project-art{margin:0;min-height:250px;height:100%}
+.project-art-web{background:radial-gradient(circle at 30% 10%,#7465ba80,transparent 60%),linear-gradient(135deg,#181c3d,#222c58);padding:18px}
+.website-preview{width:min(100%,330px);aspect-ratio:1.45;border:1px solid #7b82ba90;background:#0a1026;border-radius:12px;box-shadow:0 20px 45px #07081780;overflow:hidden;transform:rotate(-3deg)}
+.website-preview-bar{display:flex;align-items:center;gap:5px;padding:9px 10px;background:#202743;border-bottom:1px solid #424d78}
+.website-preview-bar i{width:6px;height:6px;border-radius:50%;background:#989fcb}
+.website-preview-bar span{margin:auto;font-size:9px;color:#bbc4e6;letter-spacing:1px}
+.website-preview-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;height:calc(100% - 26px)}
+.website-preview-name{font:700 clamp(23px,3vw,36px) 'Outfit','Segoe UI',sans-serif;color:#f5f7ff;letter-spacing:-1.5px}
+.website-preview-subtitle{font-size:9px;letter-spacing:2px;color:#a0add3}
+.website-preview-bars{display:flex;gap:8px;margin-top:9px}.website-preview-bars i{height:9px;width:54px;background:#847cf5;border-radius:4px}.website-preview-bars i+i{background:#394464}
+.personal-site-card .project-card-content{min-width:0}.personal-site-card h3{font-size:clamp(22px,2.5vw,30px);margin:0 0 12px}.personal-site-card p{min-height:0}.personal-site-card .tags{margin:16px 0}.project-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.project-actions .btn{padding:11px 15px}
+@media(max-width:780px){.personal-site-card{grid-template-columns:1fr;padding:22px;gap:20px}.personal-site-card .project-art{min-height:200px}.personal-site-card .project-number{grid-column:auto}}
+
+.hobby-theories .theory-tags{display:flex;flex-wrap:wrap;gap:9px;margin:17px 0}.theory-tags span{font-size:12px;line-height:1.5;color:var(--text);background:rgba(128,134,214,.12);border:1px solid var(--border);padding:7px 11px;border-radius:9px}.theory-contact{display:inline-flex;align-items:center;gap:8px;margin-top:8px;color:var(--accent);font-size:13px;font-weight:700;text-decoration:none}.theory-contact:hover{text-decoration:underline}
