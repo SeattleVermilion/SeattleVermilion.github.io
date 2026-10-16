@@ -68,3 +68,15 @@ body[data-theme="academic"] .hobby-icon{background:#edf4fa}
 .beyond-section .hobby-poem .poetry-lines{margin:15px 0 12px;border:0;padding:0;font-size:clamp(17px,2.2vw,23px);font-weight:600;line-height:1.85;letter-spacing:.035em;color:var(--text)}
 .beyond-section .hobby-poem .poetry-byline{font-size:12px;color:var(--accent);margin:0 0 11px}
 .beyond-section .hobby-poem .poetry-comment{font-size:12px;color:var(--muted);margin:0}
+
+#cv .education-panel{padding:38px 42px}
+#cv .education-panel h3{font:650 clamp(25px,3vw,34px)/1.25 'Outfit','Segoe UI',sans-serif;letter-spacing:-.7px;margin:14px 0 8px;color:var(--text)}
+#cv .education-intro{color:var(--muted);font-size:14px;margin:0 0 30px}
+#cv .education-timeline{list-style:none;padding:0 0 0 29px;margin:0;position:relative;border-left:1px solid var(--border)}
+#cv .education-timeline li{position:relative;padding:0 0 28px 6px}
+#cv .education-timeline li:last-child{padding-bottom:0}
+#cv .education-timeline li:before{content:'';position:absolute;left:-35px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(139,141,255,.12)}
+#cv .education-level{display:block;font-size:10px;color:var(--accent);letter-spacing:1.7px;font-weight:700;margin-bottom:8px}
+#cv .education-timeline h4{font-size:20px;line-height:1.35;margin:0;color:var(--text);font-weight:650}
+#cv .education-timeline p{margin:5px 0 0;color:var(--muted);font-size:13px}
+@media(max-width:780px){#cv .education-panel{padding:26px 22px}#cv .education-timeline h4{font-size:18px}}
