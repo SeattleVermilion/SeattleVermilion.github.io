@@ -44,14 +44,27 @@ body[data-theme="academic"] .hero h1{color:#202d40}
 @media(max-width:900px){#about .about-grid{grid-template-columns:minmax(0,1fr)}#about .about-side{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}#about .about-primary .about-large{max-width:unset}}
 @media(max-width:600px){#about .about-grid{gap:14px}#about .about-primary{padding:26px 23px 24px}#about .about-primary .about-large{font-size:22px}#about .about-side{grid-template-columns:1fr;gap:14px}#about .info-card{padding:24px}#about .about-copy{font-size:14px;line-height:1.85}}
 
-#research .feature-card{display:flex;flex-direction:column}
-#research .feature-body{display:flex;flex-direction:column;flex:1;gap:0}
-#research .feature-body>p{min-height:0;margin:0 0 14px;line-height:1.85}
-#research .feature-body .tags{margin-top:7px;margin-bottom:23px}
-#research .research-details{display:grid;gap:0;margin-top:auto;border-top:1px solid var(--border)}
-#research .research-detail{padding:17px 0;border-bottom:1px solid var(--border)}
-#research .research-detail:last-child{border-bottom:0;padding-bottom:0}
-#research .research-detail>span{display:block;font-size:10px;letter-spacing:1.6px;font-weight:700;color:var(--accent);margin-bottom:6px}
-#research .research-detail>p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}
-#research .research-disclaimer{margin:18px 2px 0;color:var(--muted);font-size:12px;line-height:1.7}
-@media(max-width:780px){#research .feature-body{padding:25px}#research .research-details{margin-top:4px}}
+.beyond-section{padding-bottom:70px}
+.beyond-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.hobby-card{padding:29px;min-width:0;display:flex;flex-direction:column;gap:14px;transition:transform .2s,border-color .2s}
+.hobby-card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.hobby-card h3{font-size:22px;line-height:1.4;margin:0;color:var(--text)}
+.hobby-card p{font-size:14px;line-height:1.85;color:var(--muted);margin:0}
+.hobby-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:15px;background:rgba(147,130,255,.11);border:1px solid var(--border);font-size:23px;color:var(--accent)}
+.hobby-lines{display:grid;gap:12px;margin-top:5px}
+.hobby-lines>div{display:flex;gap:12px;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:10px;align-items:baseline}
+.hobby-lines strong{font-size:16px;color:var(--text)}
+.hobby-lines span{font-size:13px;color:var(--muted)}
+.hobby-apple{font-size:12px;line-height:1.6;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;margin-top:auto}
+.hobby-feature{background:linear-gradient(135deg,rgba(145,122,255,.16),var(--surface) 65%)}
+.hobby-birthday{grid-column:span 3;display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:15px 23px}
+.hobby-birthday h3{font-size:25px}.hobby-birthday p{margin-left:auto}
+body[data-theme="academic"] .hobby-feature{background:linear-gradient(135deg,#eaf3fb,#fff 70%)}
+body[data-theme="academic"] .hobby-icon{background:#edf4fa}
+@media(max-width:900px){.beyond-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hobby-birthday{grid-column:span 2}}
+@media(max-width:600px){.beyond-grid{grid-template-columns:1fr;gap:14px}.hobby-card{padding:24px}.hobby-birthday{grid-column:auto;display:flex;flex-direction:column;align-items:flex-start}.hobby-birthday p{margin-left:0}}
+
+.beyond-section .hobby-separator{height:1px;background:var(--border);margin:19px 0 15px}
+.beyond-section .hobby-poem .poetry-lines{margin:15px 0 12px;border:0;padding:0;font-size:clamp(17px,2.2vw,23px);font-weight:600;line-height:1.85;letter-spacing:.035em;color:var(--text)}
+.beyond-section .hobby-poem .poetry-byline{font-size:12px;color:var(--accent);margin:0 0 11px}
+.beyond-section .hobby-poem .poetry-comment{font-size:12px;color:var(--muted);margin:0}
